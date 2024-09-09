@@ -1,0 +1,18 @@
+# ninja log v6
+55	58	1725824200509385184	CMakeFiles/MineC__.dir/Core/Config.cpp.o.modmap	4be0884ea390be13
+55	58	1725824200509385184	CMakeFiles/MineC__.dir/CXX.dd	4be0884ea390be13
+1	55	1725824200457384705	CMakeFiles/MineC__.dir/main.cpp.o.ddi	e4d9a6638dd53d7
+1	56	1725741645269070704	CMakeFiles/MineC__.dir/glad.c.o	948866a9f2ddddf6
+55	348	1725823169705242071	CMakeFiles/MineC__.dir/Core/Config.cpp.o	4130965ac3c16bed
+55	58	1725824200509385184	CMakeFiles/MineC__.dir/main.cpp.o.modmap	4be0884ea390be13
+1	16	1725824390617577617	build.ninja	614e7d6f6e853a8b
+1	49	1725819852520914335	CMakeFiles/MineC__.dir/Core/Window.cpp.o.ddi	9769f342ab6206f0
+55	58	1725824200509385184	CMakeFiles/MineC__.dir/Core/Window.cpp.o.modmap	4be0884ea390be13
+55	58	1725824200509385184	/home/madeline/CLionProjects/MineC++/cmake-build-debug/CMakeFiles/MineC__.dir/CXXModules.json	4be0884ea390be13
+58	347	1725824200513385221	CMakeFiles/MineC__.dir/main.cpp.o	46792e5e40c501f7
+1	47	1725793019642186152	CMakeFiles/MineC__.dir/Core/Input.cpp.o.ddi	ae4064fccebb38a7
+2	52	1725823169649241131	CMakeFiles/MineC__.dir/Core/Config.cpp.o.ddi	a6a151f5327e7d56
+55	58	1725824200509385184	CMakeFiles/MineC__.dir/Core/Input.cpp.o.modmap	4be0884ea390be13
+50	293	1725793019690187062	CMakeFiles/MineC__.dir/Core/Input.cpp.o	f334a39a16ceef04
+347	384	1725824200801387863	MineC__	b9c44430c5b82953
+52	320	1725819852572914153	CMakeFiles/MineC__.dir/Core/Window.cpp.o	7e17b0d5f5ecef6

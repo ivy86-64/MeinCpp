@@ -1,0 +1,9 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/MineC__.dir/main.cpp.o: dyndep
+
+build CMakeFiles/MineC__.dir/Core/Window.cpp.o: dyndep
+
+build CMakeFiles/MineC__.dir/Core/Input.cpp.o: dyndep
+
+build CMakeFiles/MineC__.dir/Core/Config.cpp.o: dyndep
+

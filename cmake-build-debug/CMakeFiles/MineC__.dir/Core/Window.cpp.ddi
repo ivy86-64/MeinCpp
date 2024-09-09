@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/MineC__.dir/Core/Window.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
