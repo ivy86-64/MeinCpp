@@ -13,7 +13,7 @@ int main() {
 
     ConfigHandler config{};
     config.initConfig();
-    gl
+
     GLFWwindow* window = Window::createWindow(windowWidth, windowHeight, windowTitle, false);
     Window::installCallbacks(window); //Input Callbacks
 
