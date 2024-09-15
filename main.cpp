@@ -1,8 +1,11 @@
 #include "Core.h"
 #include <cmath>
+
+#include "Shader.h"
 #include "Window.h"
 #include "Config.h"
 #include "Renderer.h"
+
 constexpr int windowWidth{800};
 constexpr int windowHeight{600};
 const char* windowTitle{"MineC++"};
@@ -31,10 +34,26 @@ int main() {
 
     //Init the OpenGL Renderer
 
-    unsigned int shaderProgram{ RendererOGL::initShaderProgram() };
-    unsigned int VAO{ RendererOGL::initVAO() };
+    const Shader triangleShader("../Shaders/triangle.vert", "../Shaders/triangle.frag");
+    const unsigned int VAO{ RendererOGL::initVAO() };
     //Init for get current cursor pos
     //double xPos = 0, yPos = 0;
+
+    //Texture code, move later
+    //------------------------
+    float texCoords[] = {
+        0.0f, 0.0f, //lower-left corner
+        1.0f, 0.0f, //lower-right corner
+        0.5f, 1.0f  //top-center corner
+    };
+
+    //Set Texture Wrapping Parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+
+    //Set Texture Filtering Parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     while(!glfwWindowShouldClose(window)) {
         glClearColor(101.0f / 255.0f, 100.0f / 255.0f, 100.0f / 255.0f, 1.0f);
@@ -42,7 +61,11 @@ int main() {
 
         //Get current cursor pos
         //glfwGetCursorPos(window, &xPos, &yPos);
-        glUseProgram(shaderProgram);
+        triangleShader.use();
+
+        float timeValue = glfwGetTime();
+        float positionx = sin(timeValue) / 2.0f + 0.5f;
+        triangleShader.setFloat("offsetx", positionx);
 
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);

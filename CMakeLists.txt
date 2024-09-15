@@ -3,20 +3,23 @@ project(MeinCpp)
 
 set(CMAKE_CXX_STANDARD 20)
 
-INCLUDE_DIRECTORIES(include/)
+INCLUDE_DIRECTORIES(Headers/
+                    Libraries/)
 
 add_executable(MeinCpp  main.cpp
         glad.c
         Core/Window.cpp
-        include/Window.h
-        include/Core.h
+        Headers/Window.h
+        Headers/Core.h
         Core/Input.cpp
-        include/Input.h
+        Headers/Input.h
         Core/Config.cpp
-        include/Config.h
+        Headers/Config.h
         Core/Renderer.cpp
-        include/Renderer.h
-        include/Shader.h)
+        Headers/Renderer.h
+        Headers/Shader.h
+        Core/Shader.cpp
+        Core/Textures.cpp)
 
 #Add GLFW
 find_package(glfw3 3.3 REQUIRED)
