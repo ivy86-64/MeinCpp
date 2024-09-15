@@ -9,10 +9,10 @@ using namespace libconfig;
 
 void ConfigHandler::initConfig() {
     //Read the file
+    std::cout << "Was soll der scheiss";
     try {
         cfg.readFile("config.cfg");
     }
-
     catch(const FileIOException &fioex) {
         std::cerr << "I/O error while reading file:";
     }

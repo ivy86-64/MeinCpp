@@ -40,6 +40,10 @@ namespace Window {
         return window;
     }
 
+    void framebufferSizeCallback(GLFWwindow* window, int width, int height) {
+        glViewport(0, 0, width, height);
+    }
+
     void installCallbacks(GLFWwindow* window) {
         glfwSetKeyCallback(window, Input::keyCallback);
         glfwSetCursorPosCallback(window, Input::cursorPositionCallback);
@@ -47,6 +51,7 @@ namespace Window {
         glfwSetMouseButtonCallback(window, Input::mouseButtonCallback);
         glfwSetScrollCallback(window, Input::scrollCallback);
         glfwSetInputMode(window, GLFW_STICKY_MOUSE_BUTTONS, 1);
+        glfwSetFramebufferSizeCallback(window, framebufferSizeCallback);
     }
 
 };

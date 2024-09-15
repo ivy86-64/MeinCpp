@@ -1,3 +1,3 @@
-/home/madeline/CLionProjects/MineC++/cmake-build-debug/CMakeFiles/MineC__.dir
-/home/madeline/CLionProjects/MineC++/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/madeline/CLionProjects/MineC++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/madeline/CLionProjects/MeinCpp/cmake-build-debug/CMakeFiles/MeinCpp.dir
+/home/madeline/CLionProjects/MeinCpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/madeline/CLionProjects/MeinCpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

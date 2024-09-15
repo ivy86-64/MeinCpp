@@ -11,8 +11,12 @@ namespace Input {
 
     void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) {
         if( key == GLFW_KEY_F11 && action == GLFW_PRESS) {
-                     Window::fullscreenSwitch(window);
+            Window::fullscreenSwitch(window);
+        }
 
+        if ( key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
+            glfwSetWindowShouldClose(window, true);
+            std::cout << "CLOSING.\n";
         }
     }
 

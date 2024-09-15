@@ -1,4 +1,4 @@
-/home/madeline/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/madeline/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/madeline/CLionProjects/MineC++ -B /home/madeline/CLionProjects/MineC++/cmake-build-debug
--- Configuring done (0.0s)
+/home/madeline/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/madeline/CLionProjects/MeinCpp -B /home/madeline/CLionProjects/MeinCpp/cmake-build-debug
+-- Configuring done (0.1s)
 -- Generating done (0.0s)
--- Build files have been written to: /home/madeline/CLionProjects/MineC++/cmake-build-debug
+-- Build files have been written to: /home/madeline/CLionProjects/MeinCpp/cmake-build-debug
